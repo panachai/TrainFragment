@@ -27,9 +27,6 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
          */
-
-                //transaction.replace(R.id.layout_fragment_container, blankFragment);
-
                 transaction.replace(R.id.fragment_container, blankFragment);
                 transaction.addToBackStack(null); //เพื่อให้กด Back แล้วปิด fragment ก่อน
                 transaction.commit();
