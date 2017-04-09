@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Fragment Three" />
+        android:text="Fragment Three [test Event listener]" />
 
     <Button
         android:id="@+id/btn_close"

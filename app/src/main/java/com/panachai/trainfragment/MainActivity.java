@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.squareup.otto.Bus;
+
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +58,14 @@ public class MainActivity extends AppCompatActivity {
                 transaction.replace(R.id.fragment_container, threeFragment);
                 transaction.addToBackStack(null); //เพื่อให้กด Back แล้วปิด fragment ก่อน
                 transaction.commit();
+
             }
         });
 
+
+
     }
+
+
+
 }

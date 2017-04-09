@@ -10,9 +10,12 @@ import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.squareup.otto.Bus;
 
 
 public class ThreeFragment extends Fragment {
+
+
 
 
     public ThreeFragment() {
@@ -23,19 +26,25 @@ public class ThreeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View rootView = inflater.inflate(R.layout.fragment_three, container, false);
+
         Button btn_close = (Button)rootView.findViewById(R.id.btn_close);
         btn_close.setOnClickListener(new OnClickListener() {
 
             public void onClick(View v) {
-                //getFragmentManager().beginTransaction().remove(ThreeFragment.this).commit();
+
                 getFragmentManager().popBackStack();
             }
         });
 
+
         // Inflate the layout for this fragment
         return rootView;
     }
+
+
+
+
+
 
 }
